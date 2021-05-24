@@ -6,8 +6,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class ItemCreation here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Jaskaran Pal Kaur and Pawandeep Kaur)
+ * @version (24 May 2021)
  */
 public class ItemCreation
 {
