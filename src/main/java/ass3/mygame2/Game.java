@@ -69,8 +69,8 @@ public class Game {
      */
     private void printWelcome() {
         System.out.println();
-        System.out.println("some background here");
-        System.out.println("objective here");
+        System.out.println("This game is a text based-adventure ");
+        System.out.println("It is a simple and adventurous game to play with items, directions");
         System.out.println("include some necessary information (e.g. time limit)");
         System.out.println();
         System.out.println(currentRoom.getLongDescription());

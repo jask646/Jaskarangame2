@@ -17,26 +17,32 @@ public class RoomCreation {
     
     private void createRooms() {
 
-        Room castle, kitchen, frontGate;
+        Room castle, kitchen, frontGate ;
 
         castle = new Room("castle", "You are at the castle", false);
         kitchen = new Room("kitchen", "The kitchen door has a shape of a heart", false);
         frontGate = new Room("frontGate", "There is a giant ogre", true);
+   //     bedroom= new Room("bedroom", "you are in bedroom", true);
         
 
         castle.setExit("east", kitchen);
-        castle.setExit("south", frontGate);
+        castle.setExit("northwest", frontGate);
         frontGate.setExit("north", castle);
+       // kitchen.setExit("west", bedroom);
+       
         
 
         castle.addItemInRoom(itemCreation.getItem("excaliburSword"));
         castle.addItemInRoom(itemCreation.getItem("key"));
         kitchen.addItemInRoom(itemCreation.getItem("frontGateKey"));
         frontGate.addItemInRoom(itemCreation.getItem("item1"));
+        //frontGate.addItemInRoom(itemCreation.getItem("bedroomkey"));
+        
 
         allRoomInGame.add(castle);
         allRoomInGame.add(frontGate);
         allRoomInGame.add(kitchen);
+      //  allRoomInGame.add(bedroom);
         
 
     }
